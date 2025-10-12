@@ -9,7 +9,7 @@ export default ({ children }: PropsWithChildren) => {
 			<head>
 				<link id='favicon' rel='icon' type='image/svg+xml' href='logo.svg' />
 			</head>
-			<body className='font-sans antialiased'>{children}</body>
+			<body className='font-sans bg-white antialiased'>{children}</body>
 		</html>
 	)
 }
