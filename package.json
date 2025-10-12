@@ -12,15 +12,15 @@
 		"./README.md"
 	],
 	"scripts": {
+            "submodule:init": "git submodule update --init --recursive",
+		"submodule:update": "git submodule sync && git submodule update --recursive --remote --merge",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
 		"dev": "next dev --turbo",
 		"make": "opennextjs-cloudflare build",
 		"preview": "opennextjs-cloudflare preview",
 		"upload": "opennextjs-cloudflare deploy",
 		"deploy": "pnpm run make && pnpm run upload",
-		"login": "wrangler login",
-		"build:lib": "cross-env NODE_ENV=production rslib build",
-		"watch:lib": "cross-env NODE_ENV=development rslib build -w"
+		"login": "wrangler login"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "pnpm pretty-quick --pattern \"**/*.*(md|css|js|jsx|ts|tsx)\" --staged"
