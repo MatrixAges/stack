@@ -1,16 +1,8 @@
 {
 	"name": "monorepo",
-	"version": "1.0.0",
-	"description": "The config panel for ai sdk.",
+	"description": "Matrixages stack for developers.",
 	"author": "1yasa",
-	"license": "MIT",
-	"type": "module",
-	"main": "ai-sdk-panel/dist/index.mjs",
-	"files": [
-		"./ai-sdk-panel/dist",
-		"./package.json",
-		"./README.md"
-	],
+	"license": "ISC",
 	"scripts": {
             "submodule:init": "git submodule update --init --recursive",
 		"submodule:update": "git submodule sync && git submodule update --recursive --remote --merge",

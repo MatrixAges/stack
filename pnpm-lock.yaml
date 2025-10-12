@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@matrixages/ai-sdk-panel':
         specifier: workspace:*
-        version: link:ai-sdk-panel
+        version: link:packages/ai-sdk-panel
       '@opennextjs/cloudflare':
         specifier: ^1.9.1
         version: 1.9.1(wrangler@4.42.0)
@@ -88,7 +88,7 @@ importers:
         specifier: ^4.42.0
         version: 4.42.0
 
-  ai-sdk-panel:
+  packages/ai-sdk-panel:
     dependencies:
       '@dnd-kit/core':
         specifier: ^6.3.1
