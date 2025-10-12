@@ -1,0 +1,3 @@
+[submodule "packages/ai-sdk-panel"]
+	path = packages/ai-sdk-panel
+	url = https://github.com/MatrixAges/ai-sdk-panel.git
