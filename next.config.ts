@@ -5,6 +5,7 @@ import type { NextConfig } from 'next'
 const is_dev = process.env.NODE_ENV === 'development'
 
 const config: NextConfig = {
+	reactStrictMode: false,
 	devIndicators: false,
 	outputFileTracingRoot: __dirname
 }
