@@ -9,8 +9,8 @@ import type { IPropsProviders } from '@matrixages/ai-sdk-panel'
 
 const Index = () => {
 	const props_providers: IPropsProviders = {
-		config: { providers: all_providers },
-		variant: { tab: { type: 'tab', layout: 'scroll' } },
+		// config: { providers: all_providers },
+		variant: { tab: { type: 'tab', layout: 'between' } },
 		onChange: v => {
 			// console.log(v)
 		},
@@ -19,7 +19,7 @@ const Index = () => {
 
 			return true
 		}),
-		// config: { providers: preset_providers },
+		config: { providers: preset_providers },
 		width: 690
 	}
 
