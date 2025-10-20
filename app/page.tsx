@@ -28,9 +28,9 @@ const Index = () => {
 			className='
 				flex justify-center
 				w-screen min-h-screen
+				py-20
 				bg-amber-100/20
 				dark:bg-amber-100/6
-				py-20
 			'
 		>
 			<Providers {...props_providers} />
