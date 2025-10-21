@@ -1,39 +1,24 @@
-'use client'
-
-import { useMemoizedFn } from 'ahooks'
-
-import { sleep } from '@/utils'
-import { all_providers, preset_providers, Providers } from '@matrixages/ai-sdk-panel'
-
-import type { IPropsProviders } from '@matrixages/ai-sdk-panel'
+import Link from 'next/link'
 
 const Index = () => {
-	const props_providers: IPropsProviders = {
-		// config: { providers: all_providers },
-		variant: { tab: { type: 'tab', layout: 'between' } },
-		onChange: v => {
-			// console.log(v)
-		},
-		onTest: useMemoizedFn(async () => {
-			await sleep(500)
-
-			return true
-		}),
-		config: { providers: preset_providers },
-		width: 690
-	}
-
 	return (
 		<div
 			className='
-				flex justify-center
-				w-screen min-h-screen
-				py-20
-				bg-amber-100/20
-				dark:bg-amber-100/6
+				flex flex-col justify-center items-center
+				w-screen h-screen
+				gap-9
 			'
 		>
-			<Providers {...props_providers} />
+			<h1 className='text-4xl font-medium'>MatrixAges Stack</h1>
+			<Link
+				className='
+					text-2xl font-medium tracking-wide text-gray-800
+					underline underline-offset-2
+				'
+				href='/ai-sdk-panel'
+			>
+				AI SDK PANEL
+			</Link>
 		</div>
 	)
 }
