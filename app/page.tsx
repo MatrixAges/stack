@@ -9,10 +9,10 @@ const Index = () => {
 				gap-9
 			'
 		>
-			<h1 className='text-4xl font-medium'>MatrixAges Stack</h1>
+			<h1 className='text-3xl font-medium'>MatrixAges Stack</h1>
 			<Link
 				className='
-					text-2xl font-medium tracking-wide text-gray-800
+					text-xl font-medium text-gray-800
 					underline underline-offset-2
 				'
 				href='/ai-sdk-panel'
