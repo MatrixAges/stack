@@ -3,4 +3,4 @@ packages:
 
 onlyBuiltDependencies:
       - bun
-      - playwright
+      - unrs-resolver
