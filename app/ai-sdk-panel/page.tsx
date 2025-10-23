@@ -3,7 +3,7 @@
 import { useMemoizedFn } from 'ahooks'
 
 import { sleep } from '@/utils'
-import { all_providers, preset_providers, Providers } from '@matrixages/ai-sdk-panel'
+import { preset_providers, Providers } from '@matrixages/ai-sdk-panel'
 
 import type { IPropsProviders } from '@matrixages/ai-sdk-panel'
 
