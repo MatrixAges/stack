@@ -3,13 +3,14 @@
 import { useMemoizedFn } from 'ahooks'
 
 import { sleep } from '@/utils'
-import { preset_providers, Providers } from '@matrixages/ai-sdk-panel'
+import { all_providers, preset_providers, Providers } from '@matrixages/ai-sdk-panel'
 
 import type { IPropsProviders } from '@matrixages/ai-sdk-panel'
 
 const Index = () => {
 	const props_providers: IPropsProviders = {
 		// config: { providers: all_providers },
+		config: { providers: preset_providers },
 		tab: 'between',
 		onChange: v => {
 			// console.log(v)
@@ -19,7 +20,6 @@ const Index = () => {
 
 			return true
 		}),
-		config: { providers: preset_providers },
 		width: 690
 	}
 
