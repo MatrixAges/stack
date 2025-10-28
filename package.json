@@ -8,6 +8,7 @@
 		"submodule:update": "git submodule sync && git submodule update --recursive --remote --merge",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
 		"dev": "next dev --turbo",
+		"build": "next build",
 		"make": "opennextjs-cloudflare build",
 		"preview": "opennextjs-cloudflare preview",
 		"upload": "opennextjs-cloudflare deploy",
@@ -19,7 +20,7 @@
 	},
 	"dependencies": {
 		"@matrixages/ai-sdk-panel": "workspace:*",
-		"@opennextjs/cloudflare": "^1.9.1",
+		"@opennextjs/cloudflare": "^1.11.0",
 		"@phosphor-icons/react": "^2.1.10",
 		"ahooks": "^3.9.5",
 		"classix": "^2.2.4",
@@ -48,7 +49,7 @@
 		"tailwindcss": "^4.1.14",
 		"tw-animate-css": "^1.4.0",
 		"typescript": "^5.9.3",
-		"wrangler": "^4.42.0"
+		"wrangler": "^4.45.1"
 	},
 	"browserslist": "> 1%"
 }

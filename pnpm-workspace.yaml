@@ -3,4 +3,3 @@ packages:
 
 onlyBuiltDependencies:
       - bun
-      - unrs-resolver

@@ -10,9 +10,6 @@ import type { PropsWithChildren } from 'react'
 export default ({ children }: PropsWithChildren) => {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<head>
-				<link id='favicon' rel='icon' type='image/svg+xml' href='logo.svg' />
-			</head>
 			<body className='font-sans bg-white antialiased'>
 				<ThemeProvider defaultTheme='light'>
 					<ThemeSwitch />
@@ -24,6 +21,5 @@ export default ({ children }: PropsWithChildren) => {
 }
 
 export const metadata: Metadata = {
-	title: 'AI SDK Panel',
-	description: 'The config panel for AI SDK.'
+	title: 'Matrixages Stack'
 }
